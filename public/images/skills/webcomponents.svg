@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" fill="none">
+  <rect width="256" height="256" fill="#F7DF1E" rx="28"/>
+  <path fill="#323232" d="M128 32L48 80v96l80 48 80-48V80l-80-48z"/>
+  <path fill="#FFF" d="M128 48L64 88v80l64 40 64-40V88l-64-40z"/>
+  <path fill="#F7DF1E" d="M128 64L80 96v64l48 32 48-32V96l-48-32z"/>
+  <g fill="#323232">
+    <path d="M128 80L96 104v48l32 24 32-24v-48l-32-24z"/>
+    <circle cx="112" cy="112" r="8"/>
+    <circle cx="144" cy="112" r="8"/>
+    <circle cx="128" cy="144" r="8"/>
+  </g>
+  <path stroke="#323232" stroke-width="2" fill="none" d="M112 120l16 16 16-16"/>
+  <path fill="#666" d="M64 192h128v16H64v-16z"/>
+  <path fill="#888" d="M72 216h112v8H72v-8z"/>
+  <g fill="#323232" opacity="0.8">
+    <rect x="40" y="96" width="16" height="64" rx="8"/>
+    <rect x="200" y="96" width="16" height="64" rx="8"/>
+    <rect x="96" y="40" width="64" height="16" rx="8"/>
+    <rect x="96" y="200" width="64" height="16" rx="8"/>
+  </g>
+  <text x="128" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#323232">Web Components</text>
+</svg>

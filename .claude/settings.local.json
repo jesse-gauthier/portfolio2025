@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(del tsconfig.json tsconfig.app.json tsconfig.node.json tsconfig.vitest.json env.d.ts)",
+      "Bash(rm:*)",
+      "Bash(find:*)",
+      "Bash(powershell:*)",
+      "Bash(npm install:*)"
+    ],
+    "deny": []
+  }
+}
