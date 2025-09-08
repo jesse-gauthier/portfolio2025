@@ -5,10 +5,12 @@
 /* Custom CSS Variables */
 @layer base {
   :root {
-    --color-primary: #2563eb;
-    --color-primary-dark: #1d4ed8;
+    --color-primary: #059669;
+    --color-primary-dark: #047857;
     --color-secondary: #64748b;
-    --color-accent: #f59e0b;
+    --color-accent: #10b981;
+    --color-tertiary: #34d399;
+    --color-emerald-light: #6ee7b7;
     --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
     --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
@@ -18,8 +20,9 @@
   /* Dark mode support */
   @media (prefers-color-scheme: dark) {
     :root {
-      --color-primary: #3b82f6;
-      --color-primary-dark: #2563eb;
+      --color-primary: #10b981;
+      --color-primary-dark: #059669;
+      --color-accent: #34d399;
     }
   }
 
@@ -55,6 +58,20 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+  }
+
+  /* Green gradient backgrounds */
+  .bg-gradient-green {
+    background: linear-gradient(135deg, #10b981 0%, #059669 50%, #047857 100%);
+  }
+
+  .bg-gradient-green-light {
+    background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+  }
+
+  /* Emerald glow effect */
+  .emerald-glow {
+    box-shadow: 0 0 30px rgba(16, 185, 129, 0.3), 0 0 60px rgba(16, 185, 129, 0.1);
   }
 
   /* Fade in animation */
