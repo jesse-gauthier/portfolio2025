@@ -2,13 +2,111 @@
   <DefaultLayout>
     <main class="min-h-screen">
       <!-- Hero Section -->
-      <section class="bg-gradient-to-br from-blue-50 to-indigo-100 py-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">My Projects</h1>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+      <section
+        class="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-50 via-white to-emerald-50/30"
+        aria-labelledby="projects-heading"
+      >
+        <!-- Animated Background Elements -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+          <!-- Large Background Shapes -->
+          <div class="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-emerald-100 to-green-200 rounded-full opacity-60 animate-float" style="animation-delay: 0s;"></div>
+          <div class="absolute top-1/2 -left-32 w-64 h-64 bg-gradient-to-br from-teal-100 to-emerald-200 rounded-full opacity-40 animate-float" style="animation-delay: 2s;"></div>
+          <div class="absolute bottom-0 right-1/3 w-48 h-48 bg-gradient-to-br from-green-100 to-emerald-100 rounded-full opacity-50 animate-float" style="animation-delay: 4s;"></div>
+          
+          <!-- Grid Pattern -->
+          <div class="absolute inset-0 opacity-[0.02]">
+            <div class="h-full w-full" style="background-image: radial-gradient(circle at 1px 1px, #059669 1px, transparent 0); background-size: 40px 40px;"></div>
+          </div>
+        </div>
+
+        <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+          <!-- Badge -->
+          <div 
+            class="inline-flex items-center px-4 py-2 mb-8 bg-emerald-50 border border-emerald-200 rounded-full text-emerald-700 text-sm font-medium shadow-sm"
+            data-aos="fade-up"
+            data-aos-duration="600"
+          >
+            <div class="w-2 h-2 bg-emerald-500 rounded-full mr-2 animate-pulse"></div>
+            Portfolio Showcase
+          </div>
+
+          <!-- Main Title -->
+          <h1
+            id="projects-heading"
+            class="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 tracking-tight leading-none"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-duration="800"
+          >
+            <span class="block">My</span>
+            <span class="block text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 via-green-600 to-teal-600">
+              Projects
+            </span>
+          </h1>
+
+          <!-- Description -->
+          <p 
+            class="text-xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="800"
+          >
             A comprehensive collection of my web development projects, showcasing various
-            technologies and approaches to solving real-world problems.
+            <span class="text-emerald-600 font-medium">technologies</span> and approaches to solving 
+            <span class="text-emerald-600 font-medium">real-world problems</span>.
+            Each project represents a unique challenge and creative solution.
           </p>
+
+          <!-- Stats Row -->
+          <div 
+            class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12 max-w-4xl mx-auto"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="800"
+          >
+            <div class="group">
+              <div class="text-3xl font-bold text-gray-900 mb-1 group-hover:text-emerald-600 transition-colors duration-300">50+</div>
+              <div class="text-sm text-gray-600 font-medium">Projects Built</div>
+            </div>
+            <div class="group">
+              <div class="text-3xl font-bold text-gray-900 mb-1 group-hover:text-emerald-600 transition-colors duration-300">15+</div>
+              <div class="text-sm text-gray-600 font-medium">Technologies</div>
+            </div>
+            <div class="group">
+              <div class="text-3xl font-bold text-gray-900 mb-1 group-hover:text-emerald-600 transition-colors duration-300">5+</div>
+              <div class="text-sm text-gray-600 font-medium">Years Experience</div>
+            </div>
+            <div class="group">
+              <div class="text-3xl font-bold text-gray-900 mb-1 group-hover:text-emerald-600 transition-colors duration-300">100%</div>
+              <div class="text-sm text-gray-600 font-medium">Satisfied Clients</div>
+            </div>
+          </div>
+
+          <!-- Scroll Indicator -->
+          <div 
+            class="flex flex-col items-center"
+            data-aos="fade-up"
+            data-aos-delay="400"
+            data-aos-duration="600"
+          >
+            <p class="text-sm text-gray-500 mb-2">Explore my work</p>
+            <div class="animate-bounce">
+              <svg
+                class="w-6 h-6 text-emerald-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 14l-7 7m0 0l-7-7m7 7V3"
+                />
+              </svg>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -64,7 +162,7 @@
                       <!-- Featured Badge -->
                       <div
                         v-if="project.featured"
-                        class="absolute top-3 left-3 bg-yellow-400 text-yellow-900 px-2 py-1 rounded-full text-xs font-medium"
+                        class="absolute top-3 left-3 bg-emerald-400 text-emerald-900 px-2 py-1 rounded-full text-xs font-medium"
                       >
                         Featured
                       </div>
@@ -73,7 +171,7 @@
 
                   <div class="p-6">
                     <h3
-                      class="text-xl font-semibold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors"
+                      class="text-xl font-semibold text-gray-900 mb-2 group-hover:text-emerald-600 transition-colors"
                     >
                       {{ project.name }}
                     </h3>
@@ -86,7 +184,7 @@
                       <span
                         v-for="tech in project.technologies.slice(0, 3)"
                         :key="tech"
-                        class="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-md font-medium"
+                        class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs rounded-md font-medium"
                       >
                         {{ tech }}
                       </span>
@@ -105,7 +203,7 @@
                         :href="project.demoUrl"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="text-blue-600 hover:text-blue-700 text-sm font-medium transition-colors cursor-pointer"
+                        class="text-emerald-600 hover:text-emerald-700 text-sm font-medium transition-colors cursor-pointer"
                         @click.stop
                         :aria-label="`View live demo of ${project.name} (opens in new tab)`"
                       >
@@ -204,6 +302,20 @@ const handleImageError = (event: Event) => {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+/* Float animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
 }
 
 /* Transition animations */
