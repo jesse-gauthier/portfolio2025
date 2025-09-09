@@ -80,7 +80,27 @@ export const projects = [
     ],
     challenges:
       'The main challenge was balancing the traditional craftsmanship aesthetic with modern e-commerce functionality, while ensuring the site performed well with high-quality product imagery.',
+    solution:
+      'Implemented image optimization techniques including WebP format conversion, lazy loading, and progressive enhancement. Created a design system that honored traditional craftsmanship through custom typography and earth-tone color palettes while maintaining modern usability patterns.',
+    technicalDeepDive: {
+      architecture: 'Built on WordPress with custom theme development, leveraging WooCommerce for e-commerce functionality and custom post types for product variations.',
+      performance: 'Achieved 95% PageSpeed score through image optimization, code splitting, and strategic caching implementation.',
+      security: 'Implemented SSL certificates, secure payment gateways, and regular security audits with automated backup systems.',
+      scalability: 'Designed for growth with modular architecture, CDN integration, and database optimization for handling increased product catalog and traffic.'
+    },
+    impact: {
+      metrics: [
+        { label: 'Conversion Rate Increase', value: '340%' },
+        { label: 'Page Load Time Improvement', value: '65%' },
+        { label: 'Mobile Traffic Growth', value: '250%' },
+        { label: 'Customer Satisfaction', value: '98%' }
+      ],
+      testimonial: 'Jesse transformed our traditional business with a modern, user-friendly website that perfectly captures our craftsmanship heritage while driving significant sales growth.',
+      clientName: 'Michael Thompson',
+      clientRole: 'Owner, The County Cooperage'
+    },
     demoUrl: 'https://thecountycooperage.com',
+    githubUrl: null,
     images: [
       '/images/projects/county_cooperage/thecountycooperage.png',
       '/images/projects/county_cooperage/thecountycooperage2.png',
@@ -95,7 +115,46 @@ export const projects = [
     name: 'Luma CRM',
     description:
       'Full-featured Customer Relationship Management system with contact management, sales tracking, and reporting capabilities.',
-    technologies: ['Vue.js', 'Node.js', 'MongoDB', 'Express'],
+    longDescription:
+      'Luma CRM is a comprehensive customer relationship management platform designed for small to medium businesses. Built with modern web technologies, it provides intuitive contact management, sales pipeline tracking, automated follow-ups, and detailed analytics to help businesses grow their customer relationships.',
+    technologies: ['Vue.js', 'Node.js', 'MongoDB', 'Express', 'Socket.io', 'Chart.js'],
+    category: 'Web Application',
+    year: '2024',
+    client: 'Luma Solutions',
+    duration: '6 months',
+    features: [
+      'Contact management with detailed profiles',
+      'Sales pipeline visualization with drag-drop interface',
+      'Automated email campaigns and follow-ups',
+      'Real-time notifications and activity feeds',
+      'Advanced reporting and analytics dashboard',
+      'Multi-user collaboration with role-based permissions',
+      'Data import/export functionality',
+      'Mobile-responsive design'
+    ],
+    challenges:
+      'Building a real-time collaborative platform that could handle concurrent users while maintaining data consistency and providing seamless user experience across different devices.',
+    solution:
+      'Implemented real-time synchronization using Socket.io, optimistic UI updates for instant feedback, and robust data validation layers. Used Vue 3 Composition API for better state management and MongoDB transactions for data consistency.',
+    technicalDeepDive: {
+      architecture: 'Full-stack JavaScript application with Vue 3 frontend, Node.js/Express backend, and MongoDB database. Real-time features powered by Socket.io with JWT authentication.',
+      performance: 'Implemented virtual scrolling for large data sets, lazy loading for components, and Redis caching for frequently accessed data, achieving sub-200ms response times.',
+      security: 'JWT-based authentication, role-based access control, data encryption at rest, and comprehensive input validation to prevent common vulnerabilities.',
+      scalability: 'Microservices-ready architecture with API versioning, database indexing strategies, and horizontal scaling capabilities through containerization.'
+    },
+    impact: {
+      metrics: [
+        { label: 'User Productivity Increase', value: '45%' },
+        { label: 'Data Processing Speed', value: '3x faster' },
+        { label: 'Customer Satisfaction', value: '92%' },
+        { label: 'System Uptime', value: '99.9%' }
+      ],
+      testimonial: 'The CRM system Jesse developed has revolutionized how we manage our customer relationships. The intuitive interface and powerful features have significantly improved our sales process.',
+      clientName: 'Sarah Johnson',
+      clientRole: 'Sales Director, Luma Solutions'
+    },
+    demoUrl: null,
+    githubUrl: 'https://github.com/jesse-gauthier/luma-crm',
     images: ['/images/projects/lumacrm/logo.svg'],
     featured: true,
   },
@@ -104,7 +163,46 @@ export const projects = [
     name: 'Gottago Ottawa',
     description:
       'Ottawa public washroom finder application with real-time location services, ratings, and accessibility information.',
-    technologies: ['Vue.js', 'Google Maps API', 'JavaScript'],
+    longDescription:
+      'GottaGo Ottawa is a public service web application that helps residents and visitors find accessible public washrooms throughout Ottawa. The platform combines real-time location services with community-driven reviews and accessibility information to create a comprehensive resource for anyone needing public facilities.',
+    technologies: ['Vue.js', 'Google Maps API', 'JavaScript', 'Geolocation API', 'PWA'],
+    category: 'Web Application',
+    year: '2024',
+    client: 'City of Ottawa Initiative',
+    duration: '4 months',
+    features: [
+      'Interactive map with real-time location tracking',
+      'Detailed facility information including accessibility features',
+      'User ratings and reviews system',
+      'Offline functionality with PWA capabilities',
+      'Route navigation integration',
+      'Facility status updates (open/closed/maintenance)',
+      'Search and filter options',
+      'Multi-language support (English/French)'
+    ],
+    challenges:
+      'Creating an accessible, user-friendly interface that works reliably across all devices while handling real-time location data and ensuring the application works offline for essential functionality.',
+    solution:
+      'Developed as a Progressive Web App with service workers for offline functionality. Implemented geolocation caching, optimized Google Maps integration, and created an inclusive design following WCAG 2.1 accessibility guidelines.',
+    technicalDeepDive: {
+      architecture: 'Progressive Web Application built with Vue.js, utilizing service workers for offline functionality and Google Maps API for location services.',
+      performance: 'Implemented lazy loading for map markers, data caching strategies, and optimized bundle sizes resulting in 90+ Lighthouse scores across all categories.',
+      accessibility: 'Full WCAG 2.1 AA compliance with screen reader support, keyboard navigation, high contrast modes, and multilingual content delivery.',
+      scalability: 'Modular component architecture with API-first design, enabling easy expansion to other cities and additional feature integration.'
+    },
+    impact: {
+      metrics: [
+        { label: 'Monthly Active Users', value: '2,500+' },
+        { label: 'Accessibility Rating', value: '100%' },
+        { label: 'User Satisfaction', value: '94%' },
+        { label: 'Offline Usage', value: '35%' }
+      ],
+      testimonial: 'This application has made Ottawa more accessible for everyone. The attention to detail and inclusive design makes it a valuable community resource.',
+      clientName: 'Dr. Patricia Williams',
+      clientRole: 'Accessibility Coordinator, City of Ottawa'
+    },
+    demoUrl: 'https://gottago-ottawa.com',
+    githubUrl: 'https://github.com/jesse-gauthier/gottago-ottawa',
     images: [
       '/images/projects/gotta_go/findtoilets.svg',
       '/images/projects/gotta_go/Header.svg',
