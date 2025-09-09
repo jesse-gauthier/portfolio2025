@@ -301,7 +301,7 @@ export const footerLinks = [
   { name: 'GitHub', url: 'https://github.com/jessegauthier', icon: 'github', external: true },
   {
     name: 'LinkedIn',
-    url: 'https://linkedin.com/in/jessegauthier',
+    url: 'https://www.linkedin.com/in/jesse-gauthier-475a25168/',
     icon: 'linkedin',
     external: true,
   },

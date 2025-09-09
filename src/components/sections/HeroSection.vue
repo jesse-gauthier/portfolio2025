@@ -130,7 +130,7 @@
             </a>
             
             <a 
-              href="https://linkedin.com/in/jessegauthier" 
+              href="https://www.linkedin.com/in/jesse-gauthier-475a25168/" 
               class="group flex items-center text-gray-500 hover:text-emerald-600 transition-colors duration-200"
               target="_blank"
               rel="noopener noreferrer"
