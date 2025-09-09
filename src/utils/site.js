@@ -298,12 +298,12 @@ export const contactFields = [
 ]
 
 export const footerLinks = [
-  { name: 'GitHub', url: 'https://github.com/jessegauthier', icon: 'github', external: true },
+  { name: 'GitHub', url: 'https://github.com/jesse-gauthier', icon: 'github', external: true },
   {
     name: 'LinkedIn',
     url: 'https://www.linkedin.com/in/jesse-gauthier-475a25168/',
     icon: 'linkedin',
     external: true,
   },
-  { name: 'Email', url: 'mailto:jesse@jessegauthier.dev', icon: 'email', external: true },
+  { name: 'Email', url: 'mailto:jessegauthier2@gmail.com', icon: 'email', external: true },
 ]

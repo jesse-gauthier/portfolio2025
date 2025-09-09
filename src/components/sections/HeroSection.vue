@@ -118,7 +118,7 @@
             data-aos-duration="800"
           >
             <a 
-              href="https://github.com/jessegauthier" 
+              href="https://github.com/jesse-gauthier" 
               class="group flex items-center text-gray-500 hover:text-emerald-600 transition-colors duration-200"
               target="_blank"
               rel="noopener noreferrer"

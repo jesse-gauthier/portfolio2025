@@ -169,10 +169,10 @@
                   <div>
                     <h3 class="text-xl font-semibold text-gray-900 mb-2">Email Address</h3>
                     <a
-                      href="mailto:jesse@jessegauthier.dev"
+                      href="mailto:jessegauthier2@gmail.com"
                       class="text-emerald-600 hover:text-emerald-700 transition-colors cursor-pointer font-medium text-lg"
                     >
-                      jesse@jessegauthier.dev
+                      jessegauthier2@gmail.com
                     </a>
                     <p class="text-gray-600 text-sm mt-1">Best way to reach me directly</p>
                   </div>
@@ -234,7 +234,7 @@
                 
                 <div class="grid grid-cols-2 gap-4">
                   <a
-                    href="https://github.com/jessegauthier"
+                    href="https://github.com/jesse-gauthier"
                     target="_blank"
                     rel="noopener noreferrer"
                     class="group flex items-center p-4 rounded-xl border-2 border-gray-200 hover:border-emerald-500 hover:bg-emerald-50 transition-all duration-200"
