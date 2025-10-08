@@ -220,6 +220,7 @@ export const projects = [
       '/images/projects/contact_book/contact_book1.png',
       '/images/projects/contact_book/contact_book3.png',
     ],
+    githubUrl: 'https://github.com/jesse-gauthier/firebase-contact-book',
   },
   {
     id: 'recipe-saver',
@@ -232,22 +233,23 @@ export const projects = [
       '/images/projects/recipe_saver/recipe_saver_mealplan.svg',
       '/images/projects/recipe_saver/recipe_saver_card.svg',
     ],
+    githubUrl: 'https://github.com/jesse-gauthier/recipe-manager',
   },
-  {
-    id: 'word-scramble',
-    name: 'Word Scramble Game',
-    description: 'Interactive word puzzle game with multiple difficulty levels and score tracking.',
-    technologies: ['JavaScript', 'HTML', 'CSS'],
-    images: ['/images/projects/word_scramble/wordscramble.svg'],
-  },
-  {
-    id: 'pomodoro-timer',
-    name: 'Pomodoro Timer',
-    description:
-      'Productivity timer application with customizable work/break intervals and task tracking.',
-    technologies: ['JavaScript', 'HTML', 'CSS'],
-    images: ['/images/projects/timer/timer1.png'],
-  },
+  // {
+  //   id: 'word-scramble',
+  //   name: 'Word Scramble Game',
+  //   description: 'Interactive word puzzle game with multiple difficulty levels and score tracking.',
+  //   technologies: ['JavaScript', 'HTML', 'CSS'],
+  //   images: ['/images/projects/word_scramble/wordscramble.svg'],
+  // },
+  // {
+  //   id: 'pomodoro-timer',
+  //   name: 'Pomodoro Timer',
+  //   description:
+  //     'Productivity timer application with customizable work/break intervals and task tracking.',
+  //   technologies: ['JavaScript', 'HTML', 'CSS'],
+  //   images: ['/images/projects/timer/timer1.png'],
+  // },
   {
     id: 'pokemon-catcher',
     name: 'Pokemon Catcher',
@@ -258,6 +260,7 @@ export const projects = [
       '/images/projects/pokemon/caughtpokemon.png',
       '/images/projects/pokemon/pokemoncard.png',
     ],
+    githubUrl: 'https://github.com/jesse-gauthier/pokemon_game',
   },
   {
     id: 'password-generator',
@@ -265,6 +268,7 @@ export const projects = [
     description: 'Secure password generation tool with customizable length and character sets.',
     technologies: ['JavaScript', 'HTML', 'CSS'],
     images: ['/images/projects/password_generator/password_generator1.png'],
+    githubUrl: 'https://github.com/jesse-gauthier/pokemon_game',
   },
 ]
 
