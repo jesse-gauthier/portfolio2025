@@ -99,7 +99,7 @@ export const projects = [
       clientName: 'Michael Thompson',
       clientRole: 'Owner, The County Cooperage'
     },
-    demoUrl: 'https://thecountycooperage.com',
+    demoUrl: 'https://thecountycooperage.ca/',
     githubUrl: null,
     images: [
       '/images/projects/county_cooperage/thecountycooperage.png',
