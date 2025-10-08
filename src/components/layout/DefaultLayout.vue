@@ -10,6 +10,8 @@
 
     <AppHeader />
 
+    <AlertBanner />
+
     <main id="main-content" class="flex-grow" role="main">
       <slot />
     </main>
@@ -21,6 +23,7 @@
 <script setup lang="ts">
 import AppHeader from './AppHeader.vue'
 import AppFooter from './AppFooter.vue'
+import AlertBanner from '../common/AlertBanner.vue'
 </script>
 
 <style scoped>
